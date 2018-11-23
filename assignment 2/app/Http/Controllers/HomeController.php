@@ -44,6 +44,7 @@ class HomeController extends Controller
             //return 'welcome';
         }
         else{
+            Session::put('message','Wrong Email or Password');
             return redirect()->back();
             //return redirect()->back()->with('checkbox',"your input is wrong");
             

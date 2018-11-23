@@ -45,6 +45,14 @@
                         <p class="loginhere">
                             Don't have an account ? <a href="{{ URL::to('/register') }}" class="{{ URL::to('/register') }}">Sign up</a>
                         </p>
+                        <div class="alert-success"> 
+                            <?php
+                              $message = Session::get('message');
+                              if ($message)
+                                echo $message;
+                                Session::put('message',null)
+                            ?>        
+                     </div>
                     </div>
                 </div>
             </div>

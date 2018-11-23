@@ -1,7 +1,17 @@
 @extends('backend.layouts.layout')
 @section('abc')
 <div class="container-fluid">
-
+  {{--_____________Success massege__________________--}}
+    <div class="alert-success"> 
+        <?php
+          $message = Session::get('message');
+          if ($message)
+            echo $message;
+            Session::put('message',null)
+        ?>        
+      </div>
+{{--_____________Success massege__________________--}}
+  
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -16,8 +26,8 @@
               <i class="fas fa-table"></i>
               Form Example</div>
             <div class="card-body">
-              <form class="form-horizontal" method="post" action="{{url('savepost')}}">
-                @csrf
+              <form id="signup-form" class="signup-form" method="post" action="{{ URL::to('savepost') }}">
+                {{csrf_field()}}
                 <div class="form-row">
                   <div class="form-group col-md-12">
                     <label >Title</label>

@@ -15,8 +15,8 @@
 //Route::get('about', 'HomeController@about');
 //Route::get('service', 'HomeController@service');
 
-
+//Route::get('test','HomeController@test');
 
 Route::get('/','HomeController@addPost');
 Route::post('savepost','HomeController@savepost');
-Route::get('allpost','HomeController@allpost');
+Route::get('allpost', 'HomeController@allpost');
