@@ -17,9 +17,12 @@ class HomeController extends Controller
         return view('pages.index');        
     }
     public function home(){
-            return view('pages.home');        
+        return view('pages.home');        
     }
     public function login(){
+        if(Session::has('userid')){
+            return view('pages.home');
+        }
         return view('pages.login');
     }
     public function register(){

@@ -12,7 +12,6 @@
 */
 
 Route::get('/','HomeController@index');
-
 Route::get('/login','HomeController@login');
 Route::get('/logout','HomeController@logout');
 Route::post('loginstore', 'Homecontroller@postLogin');
@@ -20,7 +19,7 @@ Route::get('/register','HomeController@register');
 Route::post('store', 'Homecontroller@store');
 
 Route::group(['middleware' => 'checkloggedin'], function(){
-    Route::get('/home','HomeController@home');
+       Route::get('/home','HomeController@home');
 
 });
 

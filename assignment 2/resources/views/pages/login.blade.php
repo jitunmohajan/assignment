@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>My Project</title>
-<link href="{{asset('LoginBackend/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('LoginBackend/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('LoginBackend/vendor/metisMenu/metisMenu.min.css')}}" rel="stylesheet">
     <link href="{{asset('LoginBackend/dist/css/sb-admin-2.css')}}" rel="stylesheet">
     <link href="{{asset('LoginBackend/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
@@ -43,7 +43,7 @@
                             </fieldset>
                         </form>
                         <p class="loginhere">
-                            Have already an account ? <a href="{{ URL::to('/register') }}" class="{{ URL::to('/register') }}">Sign up</a>
+                            Don't have an account ? <a href="{{ URL::to('/register') }}" class="{{ URL::to('/register') }}">Sign up</a>
                         </p>
                     </div>
                 </div>
