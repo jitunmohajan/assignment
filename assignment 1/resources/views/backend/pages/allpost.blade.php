@@ -2,7 +2,7 @@
 @section('abc')
 
 <div class="container">
-  <h2>Students</h2>            
+  <h2>All Post</h2>            
   <table class="table">
     <thead>
       <tr>
